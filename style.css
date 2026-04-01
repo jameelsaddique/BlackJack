@@ -117,3 +117,15 @@ body::before {
         font-size: 1rem;
     }
 }
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    text-align: center;
+    z-index: 2;
+    font-weight: 300;
+}
