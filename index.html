@@ -9,17 +9,30 @@
 <body>
 <div class="txt-con">
     <h1 id="Heading_el">BlackJack</h1>
-    <h2 id="message_el">Want to play a round</h2>
-<h2 id="card-el">Cards: </h2>
-<h2 id="sum-el">Sum:  </h2>
-<button onclick="startTheGame()">Start Game</button>
-<button id="new-card-btn" onclick="newCard()">New Card</button>
-<p id="player-el"></p>
+    <h2 id="message_el">Want to play a round?</h2>
+    
+    <div class="dealer">
+        <h2>Dealer</h2>
+        <div id="dealer-cards" class="cards"></div>
+        <div id="dealer-sum"></div>
+    </div>
+    
+    <div class="player">
+        <h2>Player</h2>
+        <div id="player-cards" class="cards"></div>
+        <div id="player-sum"></div>
+    </div>
+    
+    <button onclick="startTheGame()">Start Game</button>
+    <button id="new-card-btn" onclick="hit()">Hit</button>
+    <button id="stand-btn" onclick="stand()">Stand</button>
+    <p id="player-el"></p>
 </div>
 
 <footer>&copy; Jameel Ur Rehman. Developed and designed. All rights reserved.</footer>
 
+<footer>&copy; Jameel Ur Rehman. Developed and designed. All rights reserved.</footer>
+
     <script src="./script.js"></script>
-    <script src="./index.js"></script>
 </body>
 </html>

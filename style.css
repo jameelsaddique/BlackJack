@@ -89,6 +89,11 @@ body::before {
     box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
 }
 
+.txt-con button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 #message_el{
     font-size: 1.5rem;
     color: #e0f7fa;
@@ -100,6 +105,92 @@ body::before {
     color: #b2dfdb;
     text-align: center;
     margin-top: 10px;
+}
+
+.dealer, .player {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.dealer h2, .player h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.card {
+    width: 60px;
+    height: 90px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    animation: cardFlip 0.5s ease-in-out;
+}
+
+.card.red {
+    color: red;
+}
+
+.card .value {
+    align-self: flex-start;
+}
+
+.card .suit {
+    align-self: flex-end;
+    font-size: 1.5rem;
+}
+
+@keyframes cardFlip {
+    0% { transform: rotateY(180deg); opacity: 0; }
+    100% { transform: rotateY(0deg); opacity: 1; }
+}
+
+#dealer-sum, #player-sum {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #f0f8ff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .txt-con h1 {
+        font-size: 3rem;
+    }
+    
+    .txt-con h2 {
+        font-size: 1.5rem;
+    }
+    
+    .txt-con button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .card {
+        width: 50px;
+        height: 75px;
+        font-size: 1rem;
+    }
+    
+    .card .suit {
+        font-size: 1.2rem;
+    }
 }
 
 /* Responsive design */
