@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(135deg, #0f4c0f 0%, #1a5f1a 50%, #2d7d2d 100%);
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #333333 100%);
     color: #f0f8ff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
@@ -24,8 +24,8 @@ body::before {
     right: 0;
     bottom: 0;
     background-image: 
-        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
     pointer-events: none;
 }
 
