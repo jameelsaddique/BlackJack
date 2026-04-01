@@ -105,6 +105,16 @@ body::before {
     color: #b2dfdb;
     text-align: center;
     margin-top: 10px;
+    line-height: 1.2;
+    min-height: 1.4rem;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.txt-con {
+    padding-bottom: 80px; /* avoid footer overlap */
 }
 
 .dealer, .player {
@@ -211,12 +221,17 @@ body::before {
 
 footer {
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.9rem;
+    width: min(90%, 640px);
+    padding: 6px 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
     text-align: center;
     z-index: 2;
     font-weight: 300;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
