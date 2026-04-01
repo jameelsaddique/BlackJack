@@ -1,0 +1,30 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: darkgreen;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.txt-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+.txt-con h1{
+    color: yellowgreen;
+    font-size: 50px;
+}
+.txt-con h2{
+    font-size: 30px;
+}
+.txt-con button{
+    padding: 10px 40px;
+    background-color: yellowgreen;
+    border: none;
+    font-size: 20px;
+    color: darkgreen;
+}
